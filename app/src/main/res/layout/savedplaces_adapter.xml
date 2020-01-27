@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin_addHome_savedPlaces"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:orientation="horizontal">
+        <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/location_black"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/_13sdp"
+                      android:id="@+id/otherAddress_savedPlaces"
+                      android:layout_marginLeft="@dimen/_16sdp"
+                      android:layout_marginTop="@dimen/_10sdp"
+                      android:layout_marginBottom="@dimen/_10sdp"
+                      android:maxLines="2"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="@dimen/_20sdp"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@color/colorBlack"
+                      android:text="@string/other_address"/>
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imgCross_otherAddress_savedPlaces"
+                    android:layout_centerVertical="true">
+
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/cross_black"
+                        android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

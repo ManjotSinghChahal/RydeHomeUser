@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:id="@+id/root"
+              android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/_12sdp"
+                  android:layout_marginBottom="@dimen/_12sdp"
+                  android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/rel_vehilce_chooseCab"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/circle_apptheme">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/img_vehicle_requestCab"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:src="@drawable/icon4"/>
+        </RelativeLayout>
+
+
+        <TextView android:layout_width="@dimen/_60sdp"
+                  android:layout_height="wrap_content"
+                  android:text="RYDE Lux"
+                  android:id="@+id/txt_username_requestCab"
+                  android:layout_marginTop="@dimen/_6sdp"
+                  android:layout_marginBottom="@dimen/_2sdp"
+                  android:textSize="@dimen/_11sdp"
+                  android:gravity="center"
+                  android:layout_gravity="center_horizontal"
+                  android:textColor="@color/colorBlack"
+                  android:textStyle="bold"/>
+
+        <TextView android:layout_width="@dimen/_60sdp"
+                  android:layout_height="wrap_content"
+                  android:text=""
+                  android:gravity="center"
+                  android:id="@+id/price_requestCab"
+                  android:layout_gravity="center_horizontal"
+                  android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+</LinearLayout>

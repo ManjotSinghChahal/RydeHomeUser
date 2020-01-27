@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/rootmapAct"
+        android:fitsSystemWindows="false"
+        android:layout_height="match_parent">
+
+
+    <fragment
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map_activity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin_placeSearch"
+            android:layout_margin="@dimen/_16sdp"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:id="@+id/back_arrow_mapActivity"
+                android:background="@drawable/back_arrow_black"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_enterLocations"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:background="@drawable/rounded_corners_white">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/rel_locationFrom">
+
+                <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:id="@+id/dot_from"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_apptheme"/>
+
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/light_gray"
+                        android:textColor="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:layout_toRightOf="@+id/dot_from"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:id="@+id/edt_locationFrom_mapAct"
+                        android:hint="@string/location_from"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:id="@+id/img_cross_from"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/cross_theme"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/rel_locationTo"
+                    android:layout_below="@+id/rel_locationFrom">
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:background="@color/very_light_gray">
+                </View>
+                <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:id="@+id/dot_to"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/circle_yellow"/>
+              <!--  <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/dot_to"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:id="@+id/edt_locatioTo"
+                        android:hint="@string/location_to"/>-->
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/light_gray"
+                        android:textColor="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:layout_toRightOf="@+id/dot_to"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:id="@+id/edt_locatioTo_mapAct"
+                        android:hint="@string/location_to"/>
+
+
+                <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:id="@+id/img_addStop"
+                        android:layout_centerVertical="true"
+                        android:rotation="45"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/cross_theme"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:id="@+id/img_cross_addStop1"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/cross_theme"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/rel_locationstop2"
+                    android:visibility="gone"
+                    android:layout_below="@+id/rel_locationTo">
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:background="@color/very_light_gray">
+                </View>
+                <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:id="@+id/dot_stop"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/circle_yellow"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColorHint="@color/light_gray"
+                        android:textColor="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:layout_toRightOf="@+id/dot_stop"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:id="@+id/edt_locatioStop_mapAct"
+                        android:hint="@string/add_stop"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:id="@+id/img_cross_addStop2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/cross_theme"/>
+                   </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:id="@+id/view1_mapActivity"
+                        android:layout_marginTop="@dimen/_28sdp"
+                        android:background="@color/very_light_gray">
+                </View>
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:id="@+id/view2_mapActivity"
+                        android:visibility="gone"
+                        android:layout_below="@+id/view1_mapActivity"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@color/very_light_gray">
+
+                </View>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <include layout="@layout/stop_info_bottomsheet"/>
+    <include layout="@layout/ride_info_bottomsheet"/>
+    <include layout="@layout/request_cab_bottomsheet"/>
+    <include layout="@layout/confirm_pickup_bottomsheet"/>
+    <include layout="@layout/connect_nearbydrivers_bottomsheet"/>
+    <include layout="@layout/driver_details_bottomsheet"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

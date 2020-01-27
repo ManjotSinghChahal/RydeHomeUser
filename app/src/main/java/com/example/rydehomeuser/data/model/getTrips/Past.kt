@@ -1,0 +1,56 @@
+package com.example.rydehomeuser.data.model.getTrips
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Past(
+    val amount: String,
+    val booking_date: String,
+    val cancel: String,
+    val cancel_charges: String,
+    val cancel_reason: String,
+    val contact: String,
+    val created: String,
+    val distance: String,
+    val driver_id: String,
+    val driver_name: String,
+    val due_date: String,
+    val email: String,
+    val fare_charges: String,
+    val final_km: String,
+    val from_address: String,
+    val from_lat: String,
+    val from_long: String,
+    val id: String,
+    val intial_km: String,
+    val is_confirmed: String,
+    val is_due: String,
+    val is_paid: String,
+    val message: String,
+    val modified: String,
+    val pay_mode: String,
+    val payment_status: String,
+    val previous_ride_id: String,
+    val response: String,
+    /*val ride_distance: String,*/
+    val ride_fare: String,
+    val route: List<RouteX>,
+    val standbycharges: String,
+    val standbytime: String,
+    val status: String,
+    val ticket_id: String,
+    val to_address: String,
+    val to_lat: String,
+    val to_long: String,
+    val type: String,
+    val user_id: String,
+    val user_vehicle_id: String,
+    val vat_tax: String,
+    val vehicle_id: String,
+    val vehicle_name: String,
+    val vehicle_number: String,
+    val vehicle_type_id: String,
+    val vehicle_typeid: String,
+    val vehicle_year: String
+) : Parcelable

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/rootBusinessId"
+             tools:context=".ui.activities.signUp.fragments.bussinessId.BussinessID">
+
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_24sdp">
+
+
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_19sdp"
+                    android:text="@string/associated_with_company"/>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/bussiness_id_if_any"
+                        android:singleLine="true"
+                        android:textColorHint="@color/light_gray"
+                        android:backgroundTint="@color/light_gray"
+                        android:id="@+id/bussinessId_Company"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/txt_businessId_next"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_90sdp"
+                    android:backgroundTint="@color/colorAppTheme"
+                    android:text="@string/submit"/>
+
+
+<!--
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/rounded_full_themecolored_corners"
+                    android:text="@string/next"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/txt_businessId_next"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_90sdp"
+                    android:gravity="center"/>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

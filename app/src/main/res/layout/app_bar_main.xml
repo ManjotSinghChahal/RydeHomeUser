@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorWhite"
+            android:background="@color/colorAppTheme"
+            style="@style/HeaderBar"
+            android:id="@+id/toolbar_home">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rel_menu_home">
+                <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/home_menu_icon"
+                        android:background="@drawable/menu_icon"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/home_back_icon"
+                        android:visibility="gone"
+                        android:background="@drawable/back_icon_white"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/home_cross_icon"
+                        android:visibility="gone"
+                        android:background="@drawable/cross_white"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/title_home"
+                    android:text="@string/home"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/rel_menu_home"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_16sdp"/>
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rel_Done_Home"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_centerVertical="true">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_16sdp"
+                        android:id="@+id/txtview_Done"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/done"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rel_info_Home"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/info"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/rel_toggle"
+                    android:visibility="gone"
+                    android:background="@drawable/switch_mode"
+                    android:layout_alignParentRight="true">
+
+
+                <RelativeLayout android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:id="@+id/rel_switch_left">
+                    <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:id="@+id/img_switch_left"
+                            android:background="@drawable/circle_white"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:id="@+id/rel_switch_right"
+                                android:layout_alignParentRight="true">
+                    <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/img_switch_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:background="@drawable/circle_white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_home"
+            android:id="@+id/container_map"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+package com.example.rydehomeuser.utils
+
+
+object Constants {
+  //  val DOCS_DATA : String = "docs_data"
+
+    val CONTACT_LIST : String = "contact_list"
+    val CONTACT_NAME : String = "contact_name"
+
+    val MESSAGE = "error_message"
+    val LOGIN_DATA = "login.data"
+    val PHONE_NUMBER = "phone.number"
+    val HOME_SCREEN = "home.screen"
+    val EDITACCOUNT_SCREEN = "editacc.screen"
+    val TRIP_DETAILS = "trip.details"
+    val YOUR_TRIPS = "your.trip"
+    val HELP = "help"
+    val DEVICE_TYPE = "1"
+    val MAP_ACTIVITY = "map.activity"
+    val NOTIFICATION_TYPE = "notification.type"
+    val NOTIFICATION_DATA = "notification.data"
+    val SEARCH_PLACES = "search.places"
+    val RIDE_ID = "ride_id"
+    val AMOUNT = "amount"
+    val FRIEND_LIST = "friend.list"
+    val PAST_TRIPS = "past.trips"
+    val UPCOMING_TRIPS = "upcoming.trips"
+    val PLACE_NAME = "place.name"
+    val HOME_ADDRESS_TYPE = "2"
+    val WORK_ADDRESS_TYPE = "1"
+    val OTHER_ADDRESS_TYPE = "3"
+    val ACCOUNT_SETTINGS = "acc.settings"
+    val OTP_SCREEN = "otp.screen"
+    val HOMEFRAGMENT_SCREEN = "home.frag"
+    val HOME_ACTIVITY = "home.act"
+    val ACCOUNT_SETTING = "acc.setting"
+    val USER_RATING_STATUS = "1"
+    val FRIEND_IDS = "frnd.ids"
+    val GET_CARDS = "get.cards"
+    val CARD_ID = "card.id"
+    val REQUEST_TYPE = "req.type"
+    val CHANGE_DESTINATION_TYPE = "change.dest"
+    val PAYMENT_POINTS = "payment.points"
+    val CVV = "cvv"
+    val SAVED_PLACES = "saved.places"
+    val TIP_TYPE = "tip.type"
+
+}

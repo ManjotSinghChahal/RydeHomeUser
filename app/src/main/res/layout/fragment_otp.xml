@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootOtp"
+        android:orientation="vertical">
+
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:orientation="vertical">
+
+
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtview_info_otp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_36sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:text="@string/inst_verify_mobile"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_19sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/txt_enter_otp"/>
+
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:orientation="horizontal">
+
+
+                <com.example.rydehomeuser.utils.PinEntry
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:id="@+id/txt_pin_entry"
+                        android:maxLength="4"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/_16sdp">
+
+                </com.example.rydehomeuser.utils.PinEntry>
+
+              <!--  <RelativeLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@null"
+                              android:textSize="@dimen/_26sdp"
+                              android:maxLength="1"
+                              android:id="@+id/edt_otp1"
+                              android:inputType="number"
+                              android:textColor="@color/colorBlack"
+                              android:layout_centerInParent="true"/>
+                    <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/img_pinview1"
+                            android:background="@drawable/circle_grey_outlining"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@null"
+                              android:maxLength="1"
+                              android:inputType="number"
+                              android:textSize="@dimen/_26sdp"
+                              android:id="@+id/edt_otp2"
+                              android:textColor="@color/colorBlack"
+                              android:layout_centerInParent="true"/>
+                    <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/img_pinview2"
+                            android:background="@drawable/circle_grey_outlining"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@null"
+                              android:id="@+id/edt_otp3"
+                              android:maxLength="1"
+                              android:inputType="number"
+                              android:textSize="@dimen/_26sdp"
+                              android:textColor="@color/colorBlack"
+                              android:layout_centerInParent="true"/>
+                    <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/img_pinview3"
+                            android:background="@drawable/circle_grey_outlining"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp">
+                    <EditText android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@null"
+                              android:id="@+id/edt_otp4"
+                              android:maxLength="1"
+                              android:inputType="number"
+                              android:textSize="@dimen/_26sdp"
+                              android:textColor="@color/colorBlack"
+                              android:layout_centerInParent="true"/>
+                    <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/img_pinview4"
+                            android:background="@drawable/circle_grey_outlining"/>
+                </RelativeLayout>-->
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/txt_otp_submit"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:backgroundTint="@color/colorAppTheme"
+                    android:text="@string/next"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginTop="@dimen/_6sdp">
+
+        <RelativeLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:id="@+id/relBack_searchPlaces">
+            <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/back_arrow_black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/very_light_gray"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:hint="Search..."
+                    android:id="@+id/edit_searchPlaces"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_6sdp"/>
+            <RelativeLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relCross_searchPlaces"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true">
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/cross_black"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:background="@color/dark_gray"></View>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/relHomeAdd_savedPlaces">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/home_icon"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Home Address"
+                        android:textColor="@color/colorBlack"
+                        android:singleLine="true"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homeAdd_savedPlaces"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/dark_gray"
+                        android:singleLine="true"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:background="@color/light_gray"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/relWorkAdd_savedPlaces">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/work"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Work Address"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/colorBlack"
+                        android:singleLine="true"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/workAdd_savedPlaces"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/dark_gray"
+                        android:singleLine="true"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:background="@color/light_gray"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/relOther1Add_savedPlaces">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/location_black"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other Address"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/colorBlack"
+                        android:singleLine="true"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/other1Add_savedPlaces"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/dark_gray"
+                        android:singleLine="true"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:background="@color/light_gray"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/relOther2Add_savedPlaces">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/location_black"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other Address"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/colorBlack"
+                        android:singleLine="true"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/other2Add_savedPlaces"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/dark_gray"
+                        android:singleLine="true"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:background="@color/light_gray"></View>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_searchPlaces">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

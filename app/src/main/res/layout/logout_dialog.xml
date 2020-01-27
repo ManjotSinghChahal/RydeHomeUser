@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:text="@string/want_to_logout"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_alignParentBottom="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:id="@+id/yes_logout"
+                    android:layout_alignParentRight="true"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/no_logout"
+                    android:layout_toLeftOf="@+id/yes_logout"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

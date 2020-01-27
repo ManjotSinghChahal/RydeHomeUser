@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/rootPhoneVerify"
+              tools:context=".ui.activities.signUp.fragments.mobileNumber.MobileNumber">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_18sdp"
+            android:text="@string/enter_mobilenum"/>
+
+
+    <RelativeLayout
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtview_ryde"
+                android:id="@+id/linLay_mobileNum"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+
+
+            <com.hbb20.CountryCodePicker
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/countryCode_phoneVerify"
+                    app:ccp_showNameCode="false"
+                    app:ccp_defaultNameCode="US"
+                    app:ccp_arrowSize="@dimen/_20sdp"
+                    app:ccp_textSize="@dimen/_14sdp"
+                    android:layout_gravity="center_vertical">
+            </com.hbb20.CountryCodePicker>
+            <EditText
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:background="@null"
+                    android:id="@+id/phoneNo_phoneVerify"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="9090909090"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_9sdp"
+                android:background="@color/light_gray"
+                android:layout_below="@+id/linLay_mobileNum">
+
+        </View>
+
+
+    </RelativeLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/next_mobileNum"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_120sdp"
+                    android:backgroundTint="@color/colorAppTheme"
+                    android:text="@string/next"/>
+
+<!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/rounded_full_themecolored_corners"
+            android:text="@string/next"
+            android:visibility="gone"
+            android:id="@+id/next_mobileNum"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

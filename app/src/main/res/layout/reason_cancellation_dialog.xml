@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:background="@color/colorAppTheme">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_for_cancellation"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:overScrollMode="never"
+            android:id="@+id/recyclerview_reasonCancellation">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:textAllCaps="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:id="@+id/done_reasonCancellation"
+                android:textColor="@color/colorAppTheme"
+                android:textSize="@dimen/_14sdp"
+                android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:layout_toLeftOf="@+id/done_reasonCancellation"
+                android:id="@+id/cancel_reasonCancellation"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/_14sdp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

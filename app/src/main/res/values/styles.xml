@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+
+    <style name="Theme_Dialog"
+           parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+
+    <style name="HeaderBar">
+        <item name="android:background">@color/colorAppTheme</item>
+    </style>
+
+
+    <style name="ToggleSwitchTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+   <!-- <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/duskYellow</item>
+        <item name="colorControlActivated">@color/lightGrey</item>
+    </style>-->
+
+  <!--  <style name="RatingBar_grey" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>-->
+
+    <!--<style name="RatingBar_black" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+    </style>-->
+
+   <!-- <style name="RatingBar_theme" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/colorAppTheme</item>
+        <item name="colorControlActivated">@color/colorAppTheme</item>
+    </style>-->
+
+    <!--<style name="MediumRatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="android:scaleX">.5</item>
+        <item name="android:scaleY">.5</item>
+    </style>-->
+
+
+    <style name="LuhnStyle">
+        <item name="luhn_title">Add Card</item>
+        <item name="luhn_typeface">fonts/ClanMedium.ttf</item>
+        <item name="luhn_btn_verify_selector">@drawable/card_next_btn_selector</item>
+        <item name="luhn_show_toolbar_color">@color/colorAccent</item>
+        <item name="luhn_show_pin">true</item>
+    </style>
+
+
+
+
+    <style name="AppBottomSheetDialogTheme"
+           parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">50dp</item>
+    </style>
+
+    <style name="AppModalStyle"
+           parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/top_rounded_white</item>
+        <item name="android:layout_marginLeft">@dimen/_12sdp</item>
+        <item name="android:layout_marginRight">@dimen/_12sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_12sdp</item>
+    </style>
+
+
+
+
+</resources>

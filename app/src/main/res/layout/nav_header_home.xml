@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/nav_header"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:background="@color/colorAppTheme"
+              android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_header_imageView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/nav_header_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorWhite"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/nav_header_textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorWhite"/>
+
+          <!--  <androidx.appcompat.widget.AppCompatRatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/nav_header_rating"
+                    android:theme="@style/RatingBar"
+
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    style="?android:attr/ratingBarStyleSmall"/>
+-->
+            <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:id="@+id/nav_header_rating"
+                    android:background="@drawable/ratingstar_golden"
+                    android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

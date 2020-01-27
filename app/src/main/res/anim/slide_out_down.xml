@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:fillAfter="true">
+    <translate android:fromYDelta="0%"
+               android:toYDelta="100%"
+
+               android:duration="@android:integer/config_longAnimTime"/>
+</set>
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:fillAfter="true" >
+    <objectAnimator
+            android:duration="500"
+            android:propertyName="y"
+            android:valueFrom="0"
+            android:valueTo="-1280"
+            android:valueType="floatType" />
+</set>-->

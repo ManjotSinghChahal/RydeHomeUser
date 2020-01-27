@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/bottom_sheet__rideStatus"
+              android:layout_height="wrap_content"
+              app:behavior_hideable="false"
+              android:visibility="gone"
+              android:layout_alignParentBottom="true"
+              app:behavior_peekHeight="240dp"
+              android:background="@color/colorWhite"
+              app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lin_connectingNearbyDrivers"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:text="Searching..."
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorAppTheme"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/s_address"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:singleLine="true"
+                    android:id="@+id/sourceAdd_rideStatus"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:text="@string/d_address"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:singleLine="true"
+                    android:id="@+id/destAdd_rideStatus"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/ride_status"
+                    android:textColor="@color/colorBlack"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Waiting for driver acceptance..."
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorAppTheme"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

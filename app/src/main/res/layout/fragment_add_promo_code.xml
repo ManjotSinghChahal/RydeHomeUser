@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/rootPromoCode"
+             tools:context=".ui.activities.home.fragment.addPromoCode.AddPromoCode">
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_gravity="center_horizontal"
+    android:text="@string/code"/>
+
+    <EditText
+            android:layout_width="@dimen/_150sdp"
+              android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:id="@+id/applyCode_Code"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+    android:hint="@string/add_promo_code_s"/>
+
+    <View
+            android:layout_width="@dimen/_160sdp"
+          android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_gravity="center_horizontal"
+    android:background="@color/very_light_gray"></View>
+
+
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:id="@+id/add_Code"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:backgroundTint="@color/colorAppTheme"
+            android:text="@string/add"/>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+            android:checkableBehavior="single">
+        <item android:id="@+id/nav_item_yourTrip"
+              android:icon="@drawable/your_trip"
+              android:title="Your Trips" />
+        <item android:id="@+id/nav_item_help"
+              android:icon="@drawable/help"
+              android:title="Help" />
+        <item android:id="@+id/nav_item_payment"
+              android:icon="@drawable/payment"
+              android:title="Payment" />
+        <item android:id="@+id/nav_item_freeTrips"
+              android:icon="@drawable/your_trip"
+              android:title="Free Trips" />
+        <item android:id="@+id/nav_item_loyalty"
+              android:icon="@drawable/loylty"
+              android:title="Loyalty" />
+        <item android:id="@+id/nav_item_settings"
+              android:icon="@drawable/settings"
+              android:title="Settings" />
+
+
+    </group>
+
+
+</menu>

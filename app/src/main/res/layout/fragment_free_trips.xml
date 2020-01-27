@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.activities.home.fragment.freeRTrips.FreeTrips">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_22sdp"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_52sdp"
+                    android:layout_marginRight="@dimen/_52sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:text="@string/send_free_trips"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_11sdp"
+                    android:id="@+id/txtview_share_free_rides"
+                    android:text="@string/share_free_rides"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAppTheme"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/invitations_work"/>
+
+
+            <ImageView
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/share_rides_img"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:text="@string/share_invitation_code"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/rounded_edges_blackcolored_corners">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="k1234"
+                        android:singleLine="true"
+                        android:id="@+id/invitationCode_freeTrips"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:textSize="@dimen/_16sdp"/>
+
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:background="@drawable/share_black_icon"
+                        android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:id="@+id/share_freeTrips"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:backgroundTint="@color/colorAppTheme"
+                    android:text="@string/share"/>
+
+
+<!--
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/rounded_full_themecolored_corners"
+                    android:text="@string/share"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:id="@+id/share_freeTrips"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"/>
+-->
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

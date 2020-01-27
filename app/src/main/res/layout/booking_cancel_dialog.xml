@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@android:style/Theme.Translucent"
+                android:background="@drawable/top_rounded_white">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_44sdp"
+                    android:background="@color/colorAppTheme">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_cancel"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:layout_marginBottom="@dimen/_24sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/want_to_cancel_ride"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_20sdp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textAllCaps="true"
+                        android:id="@+id/yes_bookingCancel"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_gray"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:layout_toLeftOf="@+id/yes_bookingCancel"
+                        android:id="@+id/no_bookingCancel"
+                        android:textSize="@dimen/_15sdp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="@drawable/share_black_icon"/>
+
+</RelativeLayout>
